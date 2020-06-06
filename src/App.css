@@ -83,7 +83,54 @@ box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
 
  }
 
- .iconstyle{
+ .todo_style .iconstyle{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
 
-  
+
  }
+
+ .todo_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    align-items: center;
+    background-color: #8566aa;
+    border-radius: 50%;
+    margin:0 15px 0 35px;
+    color: aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3 )
+
+ }
+
+ .todo_style .iconstyle:hover{
+  background-color: crimson;
+
+ }
+
+
+
+ @media(max-width: 768px){
+  .center_screen{
+    width: 55%;
+  }
+  
+
+ .todo_style .iconstyle{
+  margin:0 15px 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .btn-cls{
+margin-left: 5px;
+min-height: 40px;
+width: 40px;
+color: #fff;
+font-size: 30px;
+ }
+}

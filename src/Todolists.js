@@ -1,10 +1,11 @@
 import React from 'react';
+import './App.css';
 
 
 const Todolist = (props) =>{
 
 return(
-	<div>
+	<div className="todo_style">
 	
 	<li className="list"> {props.text}</li>
 	</div>
