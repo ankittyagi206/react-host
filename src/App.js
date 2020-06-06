@@ -16,8 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          fuck you bitch
-          
+          You are the Best
 
         </a>
       </header>
