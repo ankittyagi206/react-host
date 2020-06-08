@@ -1,17 +1,20 @@
 import React from 'react';
-import './App.css';
 
+const Todolists = (props) =>{
 
-const Todolist = (props) =>{
-
-return(
-	<div className="todo_style">
 	
-	<li className="list"> {props.text}</li>
+	return ( 
+	<div className="todo_style">
+	<i onClick={()=>{
+		props.onSelect(props.id)
+
+	}}
+	 className="fa fa-times" aria-hidden="true"></i>
+	<li className="liststyle">{props.text}</li>
+
 	</div>
 	)
 
+};
 
-}
-
-export default Todolist;
+export default Todolists;

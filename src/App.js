@@ -1,54 +1,63 @@
 import React,{useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Todolists from './Todolists';
 
 
+const App =()=>{
 
-function App() {  
+  const[input,setInput]=useState("")
+  const[array,setArray]=useState([])
 
-  const [text,setText]= useState("")
-  const [items,setItems] =useState([])
+ const  Addtext =(event)=>{
 
-  const inputEvent =(event) =>{
+  setInput(event.target.value)
+ }
+ const listofitems = () =>{
 
-         setText(event.target.value)
-  }
+    setArray((olditems)=>{
 
-  const listofItems = () =>{
+      return [...olditems,input]
+    })
+    setInput("")
+ }
 
-    setItems((oldText) =>{
-      return [...oldText,text];
+ const deleteditems = (id) =>{
+    setArray((olditems)=>{
 
-    });
-setText("")
+      return olditems.filter((arrElem,i)=>{
+          return i !==id;
 
+      });
+    }); 
   };
-  return (
-    <div className="main-screen">
-        <div className="center-screen">
-        <br/>
-        <h1 className="heading" >ToDo List</h1>
-        <br/>
-        <input type="text" className="textinput" placeholder="Add items" value={text} onChange={inputEvent}/>
-        <button className="btn-cls" onClick={listofItems}> + </button>
 
-        <ol className="list-style">
-         
+return(<div className="main-screen">
+            <div className="center-screen">
+            <br/>
 
-          {
-            items.map((value)=>{
+            <h1 className="heading">Todo List</h1>
+            <br/>
+            <input className="inputstyle" type="text" value={input} placeholder="Add items" onChange={Addtext}/>
+            <button className="btn-class"  onClick={listofitems}> + </button>
+            <ol className="order-list">
 
-              return < Todolists text={value}/>   ;
-            })
-          }
+            {array.map((val,i)=>{
+                return  <Todolists 
 
-        </ol>
-        </div>
-    </div>
-    );
+                key= {i}
+                 id={i}
+                 text={val}
+                 onSelect={deleteditems}/>
+
+            })}
+           
+            </ol>
+            </div>
+
+      
+      </div>)
+
 
 }
 
 export default App;
-
