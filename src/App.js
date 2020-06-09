@@ -35,7 +35,7 @@ return(<div className="main-screen">
             <div className="center-screen">
             <br/>
 
-            <h1 className="heading">Todo List</h1>
+            <h1 className="heading">To-Do List</h1>
             <br/>
             <input className="inputstyle" type="text" value={input} placeholder="Add items" onChange={Addtext}/>
             <button className="btn-class"  onClick={listofitems}> + </button>
