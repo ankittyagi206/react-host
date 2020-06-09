@@ -8,7 +8,6 @@
   font-family: "Josefin sans", "Arial Narrow", Arial,sans-serif;
 }
 .main-screen{
-
   background: #833ab4;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -17,6 +16,7 @@ background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+
 .main-screen{
   height: 100vh;
   width: 100%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,33 +33,26 @@ background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+
 
 }
 .heading{
- background: #833ab4;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-.heading{
   background: transparent;
- 
-  color: white;
-  padding: 6px 0 2px 0;
-  margin-bottom: 10px;
-  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
-
-}
-.btn-class{
-  background: #833ab4;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #3a7bd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+padding: 6px 0 2px 0;
+margin-bottom: 10px;
+box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
 
 }
 .btn-class{
 width: 40px;
 border-radius: 50%;
 border-color: transparent;
-
+background-color: #8566aa;
 font-size: 40px;
-color: #fff;
+background: #3a7bd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 border:none;
 outline: none;
 margin-left: 10px;
@@ -67,7 +60,10 @@ box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
 
 }
 .btn-class:hover{
-  background-color: #20bf6b;
+  background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   cursor: pointer;
 }
 .inputstyle{
@@ -79,8 +75,12 @@ box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
   font-weight: 500;
   font-size: 20px;
   width:60%;
-  border-bottom: 2px solid #8566aa;
+  border-bottom: 2px solid   #3a7bd5;
+
   outline: none; 
+}
+.inputstyle{
+  border-bottom: 2px solid #8566aa;
 }
 
 .order-list{
@@ -142,7 +142,10 @@ box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
 
   
   .todo_style .fa-times:hover{
-    background-color: crimson;
+     background: #cb2d3e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
   }
   
   .btn-class{
